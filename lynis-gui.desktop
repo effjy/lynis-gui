@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Lynis GUI
+GenericName=Security Auditor
+Comment=Friendly GTK front-end for Lynis with colored audit results
+Exec=lynis-gui
+Icon=lynis-gui
+Terminal=false
+Categories=System;Security;Utility;
+Keywords=security;audit;lynis;hardening;scan;compliance;
+StartupNotify=true

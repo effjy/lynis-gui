@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1622"/>
+      <stop offset="1" stop-color="#070a0f"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00e5ff"/>
+      <stop offset="1" stop-color="#39ff14"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- shield -->
+  <path d="M128 16 L222 52 V128 C222 188 182 226 128 244
+           C74 226 34 188 34 128 V52 Z"
+        fill="url(#shield)" stroke="url(#edge)" stroke-width="6"/>
+  <!-- circuit traces -->
+  <g stroke="#13324a" stroke-width="3" fill="none" opacity="0.9">
+    <path d="M58 84 H86"/>
+    <path d="M198 84 H170"/>
+    <path d="M58 172 H86"/>
+    <path d="M198 172 H170"/>
+  </g>
+  <g fill="#00e5ff" opacity="0.8">
+    <circle cx="58" cy="84" r="4"/><circle cx="198" cy="84" r="4"/>
+    <circle cx="58" cy="172" r="4"/><circle cx="198" cy="172" r="4"/>
+  </g>
+  <!-- audit checklist -->
+  <g filter="url(#glow)">
+    <!-- three check rows -->
+    <g stroke="#39ff14" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M92 90 l10 12 l20 -24"/>
+      <path d="M92 130 l10 12 l20 -24"/>
+      <path d="M92 170 l10 12 l20 -24"/>
+    </g>
+    <g stroke="#00e5ff" stroke-width="9" stroke-linecap="round">
+      <line x1="138" y1="92" x2="176" y2="92"/>
+      <line x1="138" y1="132" x2="176" y2="132"/>
+      <line x1="138" y1="172" x2="176" y2="172"/>
+    </g>
+  </g>
+</svg>
