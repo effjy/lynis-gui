@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ lynis-gui
+<a href="https://github.com/effjy/lynis-gui/"><img src="titles/lynis-gui-title.svg" height="52" alt="Lynis GUI"></a>
 
 **A friendly GTK3 front-end for [Lynis](https://cisofy.com/lynis/) — security audits with color, live.**
 
